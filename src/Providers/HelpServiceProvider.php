@@ -62,7 +62,8 @@ class HelpServiceProvider extends ServiceProvider {
     protected function registerHooks()
     {
         $hooks = [
-            'menu.system' => 'sanatorium/help::help.hook',
+            'menu.system' => 'sanatorium/help::help.hookMenu',
+            'admin.scripts.footer' => 'sanatorium/help::help.hookFooter',
         ];
 
         $manager = $this->app['sanatorium.hooks.manager'];
