@@ -51,7 +51,7 @@ class Help {
         if ( $help = $helps->where('route', $route->getName())->first() ) {
 
             return '<li>
-            <a href="#" data-toggle="quickview" data-toggle-element="#quickview">
+            <a href="#" data-toggle="helpview" data-toggle-element="#helpview">
                 <i class="fa fa-life-ring"></i>
             </a>
         </li>';
